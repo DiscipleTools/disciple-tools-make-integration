@@ -5,7 +5,7 @@
 1. Clone [disciple-tools-make-integration](https://github.com/DiscipleTools/disciple-tools-make-integration) repository.
 
     ```sh
-    git clone https://github.com/DiscipleTools/disciple-tools-make-integration.git
+    git clone git@github.com:DiscipleTools/disciple-tools-make-integration.git
     ```
 
     - This repository is to be used as a staging area for the exporting/importing of Make's custom apps.
