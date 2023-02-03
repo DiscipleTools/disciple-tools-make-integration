@@ -131,7 +131,7 @@
     - API Key:
         - This is the D.T site token; which was generated in step 3.
     - Post Type:
-        - This is the target post type key; which will be used shoirtly, whilst mapping fields.
+        - This is the target post type key; which will be used shortly, whilst mapping fields.
 
 - Once connection fields have been populated, click save to be presented with a list of specified post type fields.
 
