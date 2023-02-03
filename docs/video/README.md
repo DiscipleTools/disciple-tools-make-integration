@@ -21,7 +21,20 @@
  See [FFMPEG wiki](https://trac.ffmpeg.org/wiki/Slideshow) for details.
 
  1. Take screenshots of all views you want to be shown in the video.
- 2. Edit `video.txt` to set the order and duration of each photo.
+ 2. Edit `video.txt` to set the order and duration of each image.
+
+```sh
+file '../imgs/1.png'
+duration 25 # 0:25
+file '../imgs/2.png'
+duration 28 # 0:53
+file '../imgs/3.png'
+duration 27 # 1:20
+file '../imgs/4.png'
+duration 10 # 1:30
+...
+```
+
  3. Open a terminal/console and run:
 
  ```sh
