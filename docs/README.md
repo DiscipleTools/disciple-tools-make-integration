@@ -40,7 +40,7 @@
 
 <img src="./imgs/5.png" width="50%">
 
-- We shall create a very simple scenario workflow; which ingest Google Spreadsheet entries and using the information, creates a new DT record using the Disciple Tools `Create Post Type Record` module.
+- We shall create a very simple scenario workflow; which processes a Google Spreadsheet, populated by Google Form responses. Then, creates a new DT record using the Disciple Tools `Create Post Type Record` module.
 
 <img src="./imgs/6.png" width="50%">
 
@@ -52,13 +52,11 @@
 
 <img src="./imgs/7.png" width="50%">
 
-> Wow! So many modules to choose from!
-
 - Then, select the actual module we wish to deploy within our scenario. In our case, we are interested in modules of type `Trigger`; for example: _Watch Rows_
 
 <img src="./imgs/8.png" width="50%">
 
-- You will then be prompted to establish a connection to the account storing target Google Sheet to be processed.
+- You will then be prompted to establish a connection to the account storing the target Google Sheet; which has been populated by Google Form responses.
 
 <img src="./imgs/9.png" width="50%">
 
@@ -66,47 +64,31 @@
 
 <img src="./imgs/10.png" width="50%">
 
-> Google's `Client ID` and `Client Secret` can be found within their [Developer Console](https://console.developers.google.com/apis) and are __optional__.
-
-> The actual steps taken to generate credentials, are beyond the scope of this document, but further information can be found in [Authenticate using API keys](https://cloud.google.com/docs/authentication/api-keys).
-
-<img src="./imgs/11.png" width="50%">
-
-> Aternatively, if no client id or secret is specified, you will be automatically prompted to grant access to your target Google account.
+- You will then be automatically prompted to grant access to your target Google account.
 
 <img src="./imgs/12.png" width="50%">
 
-- Once Google connection has been established, select spreadsheet to be processed.
+- Once connection has been established, select Google form responses spreadsheet, to be processed.
 
 <img src="./imgs/13.png" width="50%">
 
 - Once all settings have been specified, click ok and save scenario.
 
-> Now is a good time as any, to test the configured module.
-
 - Right-click on the module and select the `Run this module only` option.
 
 <img src="./imgs/14.png" width="50%">
 
-- As our spreadsheet does not contain any values, we are not expecting to see any module outputs; but, we are expecting a successful run!
+- As there are no responses to our form, we are not expecting to see any module outputs; but, we are expecting a successful run!
 
 <img src="./imgs/15.png" width="50%">
 
-> Now, let's see some data!
-
-- Navigate to the target Google Spreadsheet and enter some values.
+- Navigate to the target Google Form, complete and submit a response.
 
 <img src="./imgs/16.png" width="50%">
 
-> Notice the use of actual D.T. field value keys within `Age`, `Language` & `Milestones` columns; which is required when submitting record creation request.
-
-> Typically, the Google Spreadsheet will be an intermediary staging area; used to store information captured from a web form; which would present field value labels; whilst storing actual value keys/ids.
-
-- Re-run the module and view generated output; which should present spreadsheet row entries.
+- Run the module again and view generated output; which should contain form response.
 
 <img src="./imgs/17.png" width="50%">
-
-> Now, let's add D.T's creation module!
 
 - Click on the `Watch Rows` side tab to add a new module.
 
@@ -127,31 +109,24 @@
 - Whilst creating the connection, you will be prompted to enter values for the following fields:
     - DT Base URL:
         - This is the URL (including https:// protocol) to your D.T instance.
-        > Please ensure to omit the terminating `/` at the end of the URL, as this is automatically assigned.
+        - Please ensure to remove the terminating forward-slash `/` at the end of the URL, as this is automatically assigned.
     - API Key:
         - This is the D.T site token; which was generated in step 3.
     - Post Type:
         - This is the target post type key; which will be used shortly, whilst mapping fields.
+        - As a reminder, a post type is simply a record template, made up of specific fields.
+        - The common post types are `contacts` and `groups`.
+        - Custom post types can also be specified.
 
-- Once connection fields have been populated, click save to be presented with a list of specified post type fields.
+- Once connection fields have been populated, click save to be presented with a list of post type fields.
 
 <img src="./imgs/22.png" width="50%">
 
-- At this junction, you will now map the presented D.T post type fields against the incoming fields from the connected module; Google Sheets, Watch Rows, in our case.
+- At this point, you will now map the presented D.T post type fields against the incoming fields from the connected module; Google Sheets, Watch Rows, in our case.
 
 <img src="./imgs/23.png" width="50%">
 
-- On completion, you should have the following mappings.
-
-<img src="./imgs/24.png" width="50%">
-
-<img src="./imgs/25.png" width="50%">
-
-<img src="./imgs/26.png" width="50%">
-
 - Click ok and save latest scenario updates.
-
-> Now, let's put our scenario workflow to the test!
 
 ### Step 5: First Make Scenario - Workflow Run
 ---
@@ -164,7 +139,7 @@
 
 > Another gotcha to be aware of, is knowing the conditions your connected modules (Google Sheets - Watch Rows in our case), will trigger. As the workflow would stop if there is no data to be processed.
 
-> Therefore, in our case, a new speadsheet row signals fresh data to be processed.
+> Therefore, in our case, a new Google Form response signals new data to be processed.
 
 <img src="./imgs/28.png" width="50%">
 
