@@ -36,7 +36,13 @@
 
     First, create the Google step within the scenario workflow.
 
-    Next, create the D.T step, map fields and save scenario settings.
+    Next, we shall create the D.T step, by searching for the Disciple Tools custom application.
+
+    Then, select the Create Post Type Record module and add.
+
+    Create a connection to the target D.T instance and fill out URL, API and Post Type information.
+
+    Now, map the presented D.T post type fields against the incoming fields from the connected module and save scenario settings.
 
     <break time="500ms"/>
     <emphasis level="strong">Step 5. Make.com Scenario Workflow Run.</emphasis>

@@ -1,0 +1,10 @@
+<speak>
+    <break time="500ms"/>
+    <emphasis level="strong">Step 5. Make.com Scenario Workflow Run.</emphasis>
+
+    In order to test our workflow, simply click the Run once option in the bottom-left corner of the editor view.
+
+    On a successful run, all modules should be in a green state.
+
+    View module outputs to sanity check processed data.
+</speak>
