@@ -1,0 +1,13 @@
+<speak>
+    <break time="500ms"/>
+    <emphasis level="strong">Step 6. D.T. Created Record Sanity Check.</emphasis>
+
+    As a final sanity check, navigate to your D.T. instance and confirm submitted record has indeed been created.
+
+    Congratulations, as you now have a functioning Make.com scenario workflow!
+
+    From this point forward, you are free to explore integrating the D.T. Create module with other apps more suitable to your use case.
+
+    <break time="500ms"/>
+    <emphasis level="strong">Happy Making!</emphasis>
+</speak>

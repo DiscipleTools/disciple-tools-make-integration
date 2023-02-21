@@ -1,0 +1,8 @@
+<speak>
+    <break time="500ms"/>
+    <emphasis level="strong">Step 3. Create a D.T. Site Link.</emphasis>
+
+    A site-link token shall be required, in order to successfully establish a connection between Disciple Tools and Make.com.
+
+    Ensure the Token As Transfer Key is selected; whilst also making a note of generated Token; which will be required a little later.
+</speak>

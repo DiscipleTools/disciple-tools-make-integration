@@ -4,7 +4,7 @@
 
  ## Get Audio
  1. Write out a script to be recorded
- 2. Go to https://cloud.google.com/text-to-speech#section-2 and select a desired voice in the demo section. (recommended: en-US-Neural2-D)
+ 2. Go to https://cloud.google.com/text-to-speech#section-2 and select a desired voice in the demo section. (recommended: Voice Type: `News` / Voice Name: `en-US-News-L`)
  3. Paste your script into the demo.
  4. Open Chrome dev tools -> Network
  5. Click "Speak It" button

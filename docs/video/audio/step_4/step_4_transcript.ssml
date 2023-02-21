@@ -1,0 +1,18 @@
+<speak>
+    <break time="500ms"/>
+    <emphasis level="strong">Step 4. Make.com Scenario Configuration.</emphasis>
+
+    Return back to the Make.com Dashboard and create a new scenario.
+
+    A very simple scenario workflow shall be created; which processes a Google Spreadsheet, populated by Google Form responses. Then, creates a new D.T record using the Disciple Tools Create Post Type Record module.
+
+    First, create the Google step within the scenario workflow.
+
+    Next, we shall create the D.T step, by searching for the Disciple Tools custom application.
+
+    Then, select the Create Post Type Record module and add.
+
+    Create a connection to the target D.T instance and fill out URL, API and Post Type information.
+
+    Now, map the presented D.T post type fields against the incoming fields from the connected module and save scenario settings.
+</speak>
